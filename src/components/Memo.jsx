@@ -14,6 +14,15 @@ function Memo() {
     return result;
   }, [number]); // only run when number changes
 
+  const normal = (()=>{
+    console.log("calulating square without useMemo")
+    let res = 0
+    for(let i = 0; i<100000000; i++){
+      res = number * number
+    }
+    return res
+  })();
+
   console.log("Parent rendered");
   console.log("Parent rendered, number:", number);
 
@@ -28,7 +37,8 @@ function Memo() {
       }}
     >
       <h2>Number: {number}</h2>
-      <h3>Squared: {squared}</h3>
+      <h3>Squared :{squared}</h3>
+      <h3>Squared Normal:{normal}</h3>
       <button onClick={() => setNumber(number + 1)}>Increment Number</button>
       <button onClick={() => setTheme(!theme)}>Toggle Theme</button>
     </div>
