@@ -1,16 +1,17 @@
-
-import Counter from "./components/Counter"
-import Memo from "./components/Memo"
-import Parent from "./components/Theme"
+// import Counter from "./components/Counter"
+// import Memo from "./components/Memo"
+import Example from "./components/Example"
+// import Parent from "./components/Theme"
 
 
 function App() {
 
   return (
     <>
-    <Parent/>
-    <Memo/>
-    <Counter/>
+    {/* <Parent/> */}
+    {/* <Memo/> */}
+    {/* <Counter/> */}
+   <Example/>
     </>
   )
 }
