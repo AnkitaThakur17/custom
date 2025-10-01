@@ -2,14 +2,14 @@
 // import Memo from "./components/Memo"
 import Example from "./components/Example"
 import Without from "./components/Without"
-// import Parent from "./components/Theme"
+import Parent from "./components/Theme"
 
 
 function App() {
 
   return (
     <>
-    {/* <Parent/> */}
+    <Parent/>
     {/* <Memo/> */}
     {/* <Counter/> */}
    <Example/>

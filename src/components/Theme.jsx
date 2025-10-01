@@ -7,7 +7,7 @@ function Parent() {
   // useCallback → function reference same until deps change
   const handleClick = useCallback(() => {
     console.log("Child button clicked!");
-  }, []); // no dependencies → same reference forever
+  }, [count]); // no dependencies → same reference forever
 
   console.log("Parent rendered");
 
